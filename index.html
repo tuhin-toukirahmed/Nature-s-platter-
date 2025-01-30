@@ -28,72 +28,73 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+
+    <nav class="sticky top-0 z-50 w-11/12 mx-auto mt-2 ">
+        <div class="navbar bg-base-100 shadow-sm rounded-md ">
+            <div class="navbar-start">
+                <div class="logo flex  justify-center items-center  w-[100px] lg:w-[150px] ">
+                    <img src="./assets/logo-header.png" alt="">
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+                <ul class="menu menu-horizontal px-1 lg:text-xl font-semibold">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end ">
+                <div class="hidden md:flex gap-2 items-center">
+                    <!-- search svg -->
+                    <div class="cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+
+                    </div>
+                    <!-- Cart svg -->
+                    <div class="cursor-pointer ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                    </div>
+                    <a class="btn">Login</a>
+                    <a class="btn bg-[var(--primary-color)]">Register</a>
+                </div>
+                <div class="drawer drawer-end justify-end md:hidden">
+                    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+                        <!-- Page content here -->
+                        <label for="my-drawer-4" class="drawer-button btn bg-[var(--primary-color)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+
+                        </label>
+                    </div>
+                    <div class="drawer-side">
+                        <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+                        <ul class="menu bg-base-200 text-base-content min-h-full w-40 p-4">
+                            <!-- Sidebar content here -->
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
     <!-- Header -->
     <header class=" ">
-        <!-- Navbar -->
-        <nav class="sticky top-0 z-50 w-11/12 mx-auto mt-2">
-            <div class="navbar bg-base-100 shadow-sm ">
-                <div class="navbar-start">
-                    <div class="logo flex  justify-center items-center  w-[100px] lg:w-[150px] ">
-                        <img src="./assets/logo-header.png" alt="">
-                    </div>
-                </div>
-                <div class="navbar-center hidden lg:flex ">
-                    <ul class="menu menu-horizontal px-1 lg:text-xl font-semibold">
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end ">
-                    <div class="hidden md:flex gap-2 items-center">
-                        <!-- search svg -->
-                        <div class="cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                            </svg>
-
-                        </div>
-                        <!-- Cart svg -->
-                        <div class="cursor-pointer ">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                            </svg>
-                        </div>
-                        <a class="btn">Login</a>
-                        <a class="btn bg-[var(--primary-color)]">Register</a>
-                    </div>
-                    <div class="drawer drawer-end justify-end lg:hidden">
-                        <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-                        <div class="drawer-content">
-                            <!-- Page content here -->
-                            <label for="my-drawer-4" class="drawer-button btn bg-[var(--primary-color)]">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>
-
-                            </label>
-                        </div>
-                        <div class="drawer-side">
-                            <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
-                            <ul class="menu bg-base-200 text-base-content min-h-full w-40 p-4">
-                                <!-- Sidebar content here -->
-                                <li><a href="#">Product</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </nav>
         <!-- Hero -->
         <section class="mt-10 bg-gradient-to-t from-[#efebe3] to-[#ffffff] ">
             <div class="hero flex flex-col items-center ">
@@ -116,6 +117,37 @@
 
         </section>
     </header>
+    <main>
+        <!-- services section  -->
+        <section class="services w-11/12 mx-auto mt-5 space-y-2">
+            <h1 class="text-2xl lg:text-4xl font-bold text-[var(--primary-color)]">Services</h1>
+            <div class="services-container flex flex-col md:flex-row gap-5">
+                <div
+                    class="service-items p-10 bg-[var(--secondary-color)] flex flex-col items-center rounded-xl justify-center">
+                    <img src="./assets/service.png" class="w-18" alt="">
+                    <h2 class="text-lg font-semibold text-[var(--text-color)]">24/7 Services</h2>
+                    <p class="text-[var(--text-color)] text-sm text-center">We provide 24/7 customer support to help you
+                        find the perfect product for your needs.</p>
+                </div>
+                <div
+                    class="service-items p-10 bg-[var(--secondary-color)] flex flex-col items-center rounded-xl justify-center">
+                    <img src="./assets/delivery.png" class="w-18" alt="">
+                    <h2 class="text-lg font-semibold text-[var(--text-color)]">Fast Delivery</h2>
+                    <p class="text-[var(--text-color)] text-sm text-center">We deliver fresh produce to your doorstep at
+                        the best prices possible and on time every day.</p>
+
+                </div>
+                <div
+                    class="service-items p-10 bg-[var(--secondary-color)] flex flex-col items-center gap-2 rounded-xl justify-center">
+                    <img src="./assets/healthy.png" class="w-18" alt="">
+                    <h2 class="text-lg font-semibold text-[var(--text-color)] md:text-base lg:text-lg">Healthy Products
+                    </h2>
+                    <p class="text-[var(--text-color)] text-sm text-center">We source only the best-quality ingredients
+                        to ensure that you're getting most nutritious options.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
