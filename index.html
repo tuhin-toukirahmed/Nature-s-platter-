@@ -123,15 +123,19 @@
             <h1 class="text-2xl lg:text-4xl font-bold text-[var(--primary-color)]">Services</h1>
             <div class="services-container flex flex-col md:flex-row gap-5">
                 <div
-                    class="service-items p-10 bg-[var(--secondary-color)] flex flex-col items-center rounded-xl justify-center">
-                    <img src="./assets/service.png" class="w-18" alt="">
+                    class="service-items p-5 bg-[var(--secondary-color)] flex flex-col items-center rounded-xl justify-center">
+                    <div class="w-16 h-16 bg-white flex justify-center items-center rounded-full">
+                        <img src="./assets/service.png" class="w-12" alt="">
+                    </div>
                     <h2 class="text-lg font-semibold text-[var(--text-color)]">24/7 Services</h2>
                     <p class="text-[var(--text-color)] text-sm text-center">We provide 24/7 customer support to help you
                         find the perfect product for your needs.</p>
                 </div>
                 <div
                     class="service-items p-10 bg-[var(--secondary-color)] flex flex-col items-center rounded-xl justify-center">
-                    <img src="./assets/delivery.png" class="w-18" alt="">
+                    <div class="w-16 h-16 bg-white flex justify-center items-center rounded-full">
+                        <img src="./assets/delivery.png" class="w-12" alt="">
+                    </div>
                     <h2 class="text-lg font-semibold text-[var(--text-color)]">Fast Delivery</h2>
                     <p class="text-[var(--text-color)] text-sm text-center">We deliver fresh produce to your doorstep at
                         the best prices possible and on time every day.</p>
@@ -139,7 +143,9 @@
                 </div>
                 <div
                     class="service-items p-10 bg-[var(--secondary-color)] flex flex-col items-center gap-2 rounded-xl justify-center">
-                    <img src="./assets/healthy.png" class="w-18" alt="">
+                    <div class="w-16 h-16 bg-white flex justify-center items-center rounded-full">
+                        <img src="./assets/healthy.png" class="w-12" alt="">
+                    </div>
                     <h2 class="text-lg font-semibold text-[var(--text-color)] md:text-base lg:text-lg">Healthy Products
                     </h2>
                     <p class="text-[var(--text-color)] text-sm text-center">We source only the best-quality ingredients
@@ -150,10 +156,10 @@
         <!-- products section  -->
         <section class="products bg-[var(--secondary-color)]  mt-5 space-y-5 py-10 items-center  flex flex-col ">
             <h1 class="text-2xl lg:text-4xl font-bold text-[var(--primary-color)]">Popular Products</h1>
-            <div
-                class="products-container flex flex-col lg:flex-row gap-5 justify-center  md:w-11/12 mx-auto">
+            <div class="products-container flex flex-col lg:flex-row gap-5 justify-center  md:w-11/12 mx-auto">
                 <div class="product-items p-15 flex flex-col  justify-center relative flex-1 rounded-2xl mx-2 ">
-                    <div class="bg-gradient-to-br from-[#53DB3A] to-[#ffffff] w-full  top-0 left-0 h-full absolute rounded-2xl ">
+                    <div
+                        class="bg-gradient-to-br from-[#53DB3A] to-[#ffffff] w-full  top-0 left-0 h-full absolute rounded-2xl ">
                     </div>
                     <div class="product-content z-10 ">
                         <h2 class="text-2xl md:text-4xl font-bold">30% Off</h2>
@@ -168,8 +174,8 @@
                 </div>
                 <div class="all-product grid grid-cols-2 lg:grid-cols-3 gap-5 p-2">
                     <div class="stats shadow ">
-                        <div class="stat flex flex-row">
-                            <div class="stat-figure w-12">
+                        <div class="stat flex flex-row bg-white">
+                            <div class="stat-figure w-12 bg-[var(--secondary-color)] rounded-md">
                                 <img src="./assets/onion.png" alt="">
                             </div>
                             <div>
@@ -188,8 +194,8 @@
                         </div>
                     </div>
                     <div class="stats shadow ">
-                        <div class="stat flex flex-row">
-                            <div class="stat-figure w-12">
+                        <div class="stat flex flex-row bg-white">
+                            <div class="stat-figure   w-12">
                                 <img src="./assets/potato.png" alt="">
                             </div>
                             <div>
@@ -208,7 +214,27 @@
                         </div>
                     </div>
                     <div class="stats shadow ">
-                        <div class="stat flex flex-row">
+                        <div class="stat flex bg-white flex-row">
+                            <div class="stat-figure  w-12">
+                                <img src="./assets/tomato.png" alt="">
+                            </div>
+                            <div>
+                                <div class="flex items-center ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-4">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <p class="text-sm font-bold text-center">4.5</p>
+                                </div>
+                                <div class="stat-value text-sm  md:text-base">Tomato 1kg</div>
+                                <div class="stat-desc">$5.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats shadow ">
+                        <div class="stat flex bg-white flex-row">
                             <div class="stat-figure w-12">
                                 <img src="./assets/tomato.png" alt="">
                             </div>
@@ -228,28 +254,8 @@
                         </div>
                     </div>
                     <div class="stats shadow ">
-                        <div class="stat flex flex-row">
-                            <div class="stat-figure w-12">
-                                <img src="./assets/tomato.png" alt="">
-                            </div>
-                            <div>
-                                <div class="flex items-center ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="size-4">
-                                        <path fill-rule="evenodd"
-                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    <p class="text-sm font-bold text-center">4.5</p>
-                                </div>
-                                <div class="stat-value text-sm  md:text-base">Tomato 1kg</div>
-                                <div class="stat-desc">$5.99</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="stats shadow ">
-                        <div class="stat flex flex-row">
-                            <div class="stat-figure w-12">
+                        <div class="stat flex bg-white flex-row">
+                            <div class="stat-figure bg-[var(--secondary-color)] rounded-md w-12">
                                 <img src="./assets/onion.png" alt="">
                             </div>
                             <div>
@@ -268,8 +274,8 @@
                         </div>
                     </div>
                     <div class="stats shadow ">
-                        <div class="stat flex flex-row">
-                            <div class="stat-figure w-12">
+                        <div class="stat flex bg-white flex-row">
+                            <div class="stat-figure w-12 ">
                                 <img src="./assets/potato.png" alt="">
                             </div>
                             <div>
@@ -288,7 +294,7 @@
                         </div>
                     </div>
                     <div class="stats shadow ">
-                        <div class="stat flex flex-row">
+                        <div class="stat flex bg-white flex-row">
                             <div class="stat-figure w-12">
                                 <img src="./assets/potato.png" alt="">
                             </div>
@@ -308,7 +314,7 @@
                         </div>
                     </div>
                     <div class="stats shadow ">
-                        <div class="stat flex flex-row">
+                        <div class="stat flex bg-white flex-row">
                             <div class="stat-figure w-12">
                                 <img src="./assets/tomato.png" alt="">
                             </div>
@@ -328,8 +334,8 @@
                         </div>
                     </div>
                     <div class="stats shadow ">
-                        <div class="stat flex flex-row">
-                            <div class="stat-figure w-12">
+                        <div class="stat flex bg-white flex-row">
+                            <div class="stat-figure bg-[var(--secondary-color)] rounded-md w-12">
                                 <img src="./assets/onion.png" alt="">
                             </div>
                             <div>
@@ -348,8 +354,8 @@
                         </div>
                     </div>
                     <div class="stats shadow ">
-                        <div class="stat flex flex-row">
-                            <div class="stat-figure w-12">
+                        <div class="stat flex bg-white flex-row">
+                            <div class="stat-figure bg-[var(--secondary-color)] rounded-md w-12">
                                 <img src="./assets/onion.png" alt="">
                             </div>
                             <div>
@@ -368,7 +374,7 @@
                         </div>
                     </div>
                     <div class="stats shadow ">
-                        <div class="stat flex flex-row">
+                        <div class="stat flex bg-white flex-row">
                             <div class="stat-figure w-12">
                                 <img src="./assets/potato.png" alt="">
                             </div>
@@ -388,7 +394,7 @@
                         </div>
                     </div>
                     <div class="stats shadow ">
-                        <div class="stat flex flex-row">
+                        <div class="stat flex bg-white flex-row">
                             <div class="stat-figure w-12">
                                 <img src="./assets/tomato.png" alt="">
                             </div>
@@ -406,6 +412,38 @@
                                 <div class="stat-desc">$6.99</div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- New Araival  -->
+        <section class="arrival w-11/12 mx-auto mt-5 space-y-2">
+            <h1 class="text-2xl lg:text-4xl font-bold text-[var(--primary-color)]">New Arrival & Offers</h1>
+            <div class="arrival-product flex flex-col lg:flex-row items-center gap-4 ">
+                <!-- Arrival Product 1 -->
+                <div class="arrival-1 flex flex-row items-center justify-between w-full lg:w-[58%]   bg-[#115414] rounded-2xl p-5">
+                    <div class="product-content flex flex-col items-center space-y-2 gap-2">
+                        <div class="w-30 ">
+                            <img src="./assets/product1.png" alt="">
+                        </div>
+                        <h2 class="p-2 bg-[var(--primary-color)] rounded-md text-sm tracking-tight ">Cook Exotic Dishes</h2>
+                        <h1 class="text-md md:text-xl text-white ">Up to <span class="text-[var(--primary-color)] text-xl font-bold md:text-2xl">30% Off</span></h1>
+                    </div>
+                    <div class="w-[170px] md:w-[200px] md:h-[200px] bg-cover  flex justify-end">
+                        <img src="./assets/dawat-mock-up.png" class=" " alt="">
+                    </div>
+                </div>
+                <!-- Arrival Product 2 -->
+                <div class="arrival-2 flex flex-row items-center justify-between w-full lg:w-[48%] bg-[#102861] rounded-2xl p-5">
+                    <div class="product-content flex flex-col items-center space-y-2 gap-2">
+                        <div class="w-12 h-12 ">
+                            <img src="./assets/india-gate-logo.png" alt="">
+                        </div>
+                        <h2 class="p-2 bg-[var(--primary-color)] rounded-md font-semibold">World's No.1 Rice</h2>
+                        <h1 class="text-md md:text-xl text-white ">Up to <span class="text-[var(--primary-color)] text-xl font-bold md:text-2xl">49% Off</span></h1>
+                    </div>
+                    <div class=" w-[100px] md:w-[200px] md:h-[200px] bg-cover  flex justify-evenly  ">
+                        <img src="./assets/india-gate-mock-up.png" class=" " alt="">
                     </div>
                 </div>
             </div>
