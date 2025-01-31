@@ -24,6 +24,26 @@
             --secondary-color: #EFEBE3;
             --text-color: #111111;
         }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+        }
+
+        .pulse-animation {
+            
+            border-radius: 50%;
+            animation: pulse 1.5s infinite ease-in-out;
+        }
     </style>
 
     <title>Nature's Platter</title>
@@ -99,7 +119,7 @@
     <!-- Header -->
     <header class=" ">
         <!-- Hero -->
-        <section class="mt-10 bg-gradient-to-t from-[#efebe3] to-[#ffffff] relative ">
+        <section class="mt-10 bg-gradient-to-t from-[#efebe3] to-[#ffffff] relative overflow-hidden ">
             <div class="hero flex flex-col items-center ">
                 <!-- hero text -->
                 <div class="flex flex-col items-center text-center w-8/12">
@@ -119,15 +139,11 @@
                     </marquee>
                 </div>
                 <!-- hero image -->
-                <div class="hero-image md:w-6/12">
-                    <img src="./assets/hero-vegetables.png" alt="">
+                <div class="hero-image pulse-animation md:w-6/12">
+                    <img src="./assets/hero-vegetables.png" class=" duration-1000 delay-1000" alt="">
                 </div>
             </div>
-            <!-- Animetion section  -->
-            <div class="absolute top-40 right-20   ">
-                <img src="https://t4.ftcdn.net/jpg/02/14/22/57/360_F_214225742_u1jpIH77CpiNTMMQwtDzwafTyEnhRoSB.jpg"
-                    class="w-30 h-30 animate-bounce duration-[2s]  rounded-full" alt="">
-            </div>
+            
 
         </section>
     </header>
